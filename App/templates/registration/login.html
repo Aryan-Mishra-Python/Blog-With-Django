@@ -1,0 +1,21 @@
+{% extends 'App/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron" style="background-color: crimson; color: white;">
+    <h3>Please Login</h3>
+    <h4>Must Be A Superuser, Please Contact The Site Admin, In-order To Register</h4><br><br>
+
+    {% if form.errors %}
+    <h4>Your Username Or Password Didn't Match, Please Enter The Correct Information And Try Again, Or Contact The Admin</h4>
+    {% endif %}
+
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-outline-primary", value="Login">
+        <input type="hidden" name="next" value="{{next}}">
+    </form>
+</div>
+
+{% endblock %}

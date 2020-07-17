@@ -1,0 +1,33 @@
+.add-shadow {
+  box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 1);
+}
+
+.centerstage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postdate{
+    text-align: left;
+}
+
+.posttitle{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}k
+
+.postcontent{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
+    font-size: 1em;
+}
+
+button{
+  border-radius:10px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+}

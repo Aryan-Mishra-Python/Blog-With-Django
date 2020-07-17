@@ -1,0 +1,10 @@
+{% extends "App/base.html" %}
+{% block content %}
+<h3>New Tek Talk</h3>
+<form method="POST" class="post-form">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-outline-success">Add This Tek Talk</button>
+</form>
+<script>var editor = new MediumEditor('.editable');</script>
+{% endblock %}

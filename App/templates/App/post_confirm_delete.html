@@ -1,0 +1,8 @@
+{% extends "App/base.html" %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h3>Are You Sure You Want Delete {{ object }}, There Is NO WAY TO RETRIVE IT LATER? (Think Twice!)</h3>
+    <input style="padding-top: 10px; padding-bottom: 10px; margin-top: 50px;" type="submit" class="btn btn-danger" value="I'am Sure!">
+</form>
+{% endblock %}

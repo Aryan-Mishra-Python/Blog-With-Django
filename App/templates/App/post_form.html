@@ -1,0 +1,16 @@
+{% extends "App/base.html" %}
+{% block content %}
+<h1>New Tek Story</h1>
+<p>Make Sure Your Tek Story Is Good Enough To Attract Yours </p>
+<p>The Story Will Be Not Published Directly It Will Be Saved In Your Drafts To Later Access It And Update It!</p>
+<br><br>
+
+<form method="POST" class="post-form">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="save btn btn-outline-primary">Save A Story</button>
+</form>
+
+<script>var editor = new MediumEditor('.editable');</script>
+
+{% endblock %}
