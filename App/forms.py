@@ -2,6 +2,7 @@ from django import forms
 from .models import *
 
 
+"""The Post Form For The user"""
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
@@ -13,6 +14,7 @@ class PostForm(forms.ModelForm):
         }
 
 
+"""The Commemt Form For The User"""
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
